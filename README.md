@@ -1,4 +1,4 @@
-# Python Logging
+# Python Window Management
 
 A Python module for window management
 
