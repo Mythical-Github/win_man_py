@@ -1,10 +1,10 @@
 # Python Logging
 
-A Python module for advanced logging with color themes.
+A Python module for window management
 
 ## Installation
 
 You can install this package via pip:
 
 ```bash
-pip install git+https://github.com/Mythical-Github/python_logging.git
+pip install git+https://github.com/Mythical-Github/python_window_management.git
