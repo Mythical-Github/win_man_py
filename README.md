@@ -7,4 +7,4 @@ A Python module for window management
 You can install this package via pip:
 
 ```bash
-pip install git+https://github.com/Mythical-Github/python_window_management.git
+pip install git+https://github.com/Mythical-Github/win_man_py.git
