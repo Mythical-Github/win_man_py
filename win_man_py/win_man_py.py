@@ -3,7 +3,7 @@ import os
 import pygetwindow
 import screeninfo
 
-from python_logging import log
+from log_py import log_py as log
 
 
 def does_window_exist(window_title: str, use_substring_check: bool = False) -> bool:
