@@ -30,7 +30,7 @@ def get_windows_by_title(window_title: str, use_substring_check: bool = False) -
             log.log_message(str(error_message))
     else:
         try:
-            matched_windows = [window for window in all_window_titles if window_title == window]
+            matched_windows = pygetwindow.getWindowsWithTitle(window_title)
         except Exception as error_message:
             log.log_message(str(error_message))
     return matched_windows
