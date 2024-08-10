@@ -22,15 +22,17 @@ def does_window_exist(window_title: str, use_substring_check: bool = False) -> b
 
 def get_windows_by_title(window_title: str, use_substring_check: bool = False) -> list:
     matched_windows = []
+    all_windows = pygetwindow.getAllWindows()
     if use_substring_check:
-        all_windows = pygetwindow.getAllWindows()
         try:
             matched_windows = [window for window in all_windows if window_title in window.title]
         except Exception as error_message:
             log.log_message(str(error_message))
     else:
         try:
-            matched_windows = [window for window in pygetwindow.getAllWindows() if window_title == window]
+            for window in all_windows:
+                if str(window.title).strip() == window_title.strip():
+                    matched_windows.append(window)
         except Exception as error_message:
             log.log_message(str(error_message))
     return matched_windows
